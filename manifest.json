@@ -1,0 +1,11 @@
+{
+  "name": "Crunchyroll Dub Captions",
+  "description": "Extension that adds english subtitles to dubed content on Crunchyroll",
+  "version": "1.0",
+  "manifest_version": 3,
+  "devtools_page": "devtools.html",
+  "permissions": [
+    "tabs",
+    "activeTab"
+  ]
+}
