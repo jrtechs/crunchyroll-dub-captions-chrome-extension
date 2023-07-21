@@ -215,3 +215,10 @@ function timeStampToSeconds(time) {
     var seconds = splitTime[2];
     return parseFloat(seconds) + 60 * parseFloat(minutes) + 60 * 60 * parseFloat(hours);
 }
+
+function cleanSubtitle(text) {
+    //yen {\fs12\b0}(Tax Excluded)\NOutside of Offer Period: 8980 yen
+    text = text.replace('\\N', " ");
+    text = text.replace(/([\s\S]*?){[\s\S]*?}/g, '$1');
+    return text;
+}
